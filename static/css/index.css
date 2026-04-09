@@ -732,6 +732,75 @@ a:focus {
 }
 
 
+/* Publication Subtitle */
+.publication-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Figure Containers */
+.figure-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.figure-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.figure-container img:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.figure-caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Figure Placeholder (temporary, until real images are added) */
+.figure-placeholder {
+  background: var(--background-accent);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 3rem 2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.figure-placeholder code {
+  font-size: 0.85rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Math Block */
+.math-block {
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+/* Content Section Headings */
+.content h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
 /* Print styles */
 @media print {
   .more-works-container {

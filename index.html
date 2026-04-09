@@ -3,236 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="From Navigation to Refinement">
+  <meta name="description" content="We derive the closed-form oracle velocity for flow matching and reveal that its training target is inherently two-stage: navigation and refinement.">
+  <meta name="keywords" content="flow matching, diffusion models, oracle velocity, two-stage, navigation, refinement, generative models, image generation">
+  <meta name="author" content="Haoming Liu, Jinnuo Liu, Yanhao Li, Liuyang Bai, Yunkai Ji, Yuanhe Guo, Shenji Wan, Hongyi Wen">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="NYU Center for Data Science">
+  <meta property="og:title" content="From Navigation to Refinement: Revealing the Two-Stage Nature of Flow-based Diffusion Models through Oracle Velocity">
+  <meta property="og:description" content="We derive the closed-form oracle velocity for flow matching and reveal that its training target is inherently two-stage: navigation and refinement.">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="From Navigation to Refinement - Research Preview">
+  <meta property="article:published_time" content="2025-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Haoming Liu">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="flow matching">
+  <meta property="article:tag" content="diffusion models">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="From Navigation to Refinement">
+  <meta name="twitter:description" content="We derive the closed-form oracle velocity for flow matching and reveal that its training target is inherently two-stage: navigation and refinement.">
+  <meta name="twitter:image" content="#">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <meta name="citation_title" content="From Navigation to Refinement: Revealing the Two-Stage Nature of Flow-based Diffusion Models through Oracle Velocity">
+  <meta name="citation_author" content="Liu, Haoming">
+  <meta name="citation_author" content="Liu, Jinnuo">
+  <meta name="citation_author" content="Li, Yanhao">
+  <meta name="citation_author" content="Bai, Liuyang">
+  <meta name="citation_author" content="Ji, Yunkai">
+  <meta name="citation_author" content="Guo, Yuanhe">
+  <meta name="citation_author" content="Wan, Shenji">
+  <meta name="citation_author" content="Wen, Hongyi">
+  <meta name="citation_publication_date" content="2025">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>From Navigation to Refinement</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
+  <!-- Critical CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Non-critical CSS -->
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
+  <!-- Scripts -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "From Navigation to Refinement: Revealing the Two-Stage Nature of Flow-based Diffusion Models through Oracle Velocity",
+    "description": "We derive the closed-form oracle velocity for flow matching and reveal that its training target is inherently two-stage: navigation and refinement.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Haoming Liu", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Jinnuo Liu", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Yanhao Li", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Liuyang Bai", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Yunkai Ji", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Yuanhe Guo", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Shenji Wan", "affiliation": {"@type": "Organization", "name": "New York University"}},
+      {"@type": "Person", "name": "Hongyi Wen", "affiliation": {"@type": "Organization", "name": "New York University"}}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "datePublished": "2026",
+    "url": "#",
+    "keywords": ["flow matching", "diffusion models", "oracle velocity", "two-stage", "navigation", "refinement"],
+    "isAccessibleForFree": true
   }
   </script>
 </head>
 <body>
 
-
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -240,237 +127,289 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">From Navigation to Refinement</h1>
+            <h2 class="subtitle is-4 publication-subtitle">Revealing the Two-Stage Nature of Flow-based Diffusion Models<br>through Oracle Velocity (CVPR 2026 Findings)</h2>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block"><a href="https://hmdliu.site/" target="_blank">Haoming Liu</a><sup>1,2</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Jinnuo Liu</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Yanhao Li</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Liuyang Bai</a><sup>1</sup>,</span><br>
+              <span class="author-block"><a href="#" target="_blank">Yunkai Ji</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://ricercarg.github.io/" target="_blank">Yuanhe Guo</a><sup>1,2</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=5lnIJhIAAAAJ&hl=en" target="_blank">Shenji Wan</a><sup>1,2</sup>,</span>
+              <span class="author-block"><a href="https://whongyi.github.io/" target="_blank">Hongyi Wen</a><sup>1,2</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Center for Data Science, New York University Shanghai</span><br>
+              <span class="author-block"><sup>2</sup> New York University</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2512.02826" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
+                <!-- <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://arxiv.org/abs/2512.02826" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <!-- Hero Figure -->
+  <section class="hero is-small">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+      <div class="container is-max-desktop">
+        <div class="figure-container">
+          <img src="static/images/teaser_v2.jpg" alt="Two-stage illustration" width="55%">
+          <!-- <div class="figure-placeholder">
+            <span>Figure 1: Two-stage illustration (hero figure)</span>
+            <br><small>Place image at: <code>static/images/fig_hero.png</code></small>
+          </div> -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+              <br><strong>TL;DR:</strong> We derive the closed-form oracle velocity for flow matching and reveal that its training target is inherently two-stage: a multi-sample guided <strong>navigation</strong> regime near the prior and a single-sample dominated <strong>refinement</strong> regime near the data.
+            </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- Tagline / Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Flow-based diffusion models have emerged as a leading paradigm for training generative models across images and videos. However, their memorization-generalization behavior remains poorly understood. In this work, we revisit the flow matching (FM) objective and study its marginal velocity field, which admits a closed-form expression, allowing exact computation of the oracle FM target. Analyzing this oracle velocity field reveals that flow-based diffusion models inherently formulate a two-stage training target: an early stage guided by a mixture of data modes, and a later stage dominated by the nearest data sample. The two-stage objective leads to distinct learning behaviors: the early <strong>navigation</strong> stage generalizes across data modes to form global layouts, whereas the later <strong>refinement</strong> stage increasingly memorizes fine-grained details. Leveraging these insights, we explain the effectiveness of practical techniques such as timestep-shifted schedules, classifier-free guidance intervals, and latent space design choices. Our study deepens the understanding of diffusion model training dynamics and offers principles for guiding future architectural and algorithmic improvements.
+            </p>  
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
 
+  <!-- Section 1: Closed-Form Oracle Velocity -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Closed-Form Oracle Velocity &amp; <br>the Two-Stage Training Target</h2>
+          <div class="content has-text-justified">
+            <p>
+              Flow matching (FM) learns a velocity field $v_t(x_t;\theta)$ that continuously transports a simple prior distribution $p_{\text{prior}}$ to a target data distribution $p_{\text{data}}$ over $t\in[0,1]$. Since the marginal velocity field is generally intractable, conditional flow matching (CFM) instead regresses on a per-sample conditional target $u_t(x_t\mid x_1)$, which has been shown to share identical gradients with FM. The probability path is constructed via linear interpolation:
+            </p>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+            <div class="math-block">
+              $$x_t = \alpha_t\, x_1 + \sigma_t\, x_0, \quad u_t(x_t\mid x_1) = \dot{\alpha}_t\, x_1 + \dot{\sigma}_t\, x_0$$
+            </div>
+
+            <p>
+              For rectified flow, we set $(\alpha_t, \sigma_t) = (t, 1{-}t)$ and adopt $u_t(x_t\mid x_1) = x_1 - x_0$ as the training target. We show that, under a Gaussian prior and a finite training set $\{x_1^{(i)}\}_{i=1}^N$, the oracle velocity field admits a <strong>closed-form expression</strong>:
+            </p>
+
+            <div class="math-block">
+              $$u_t^*(x_t, t) = A_t \sum_{i=1}^{N} \gamma_i(x_t, t)\, x_1^{(i)} + B_t\, x_t$$
+            </div>
+
+            <p>
+              where $A_t = \dot{\alpha}_t - \frac{\alpha_t\,\dot{\sigma}_t}{\sigma_t}$, $B_t = \frac{\dot{\sigma}_t}{\sigma_t}$, and the posterior weights $\gamma_i$ are as follows:
+            </p>
+
+            <div class="math-block">
+              $$\gamma_i(x_t, t) = \frac{\exp\!\big(-\|x_t - \alpha_t x_1^{(i)}\|^2 / 2\sigma_t^2\big)}{\sum_{j=1}^{N} \exp\!\big(-\|x_t - \alpha_t x_1^{(j)}\|^2 / 2\sigma_t^2\big)}$$
+            </div>
+
+            <p>
+              Intuitively, this oracle velocity is a <strong>weighted average</strong> over all training samples, where $\gamma_i$ determines each sample's contribution. Its behavior changes sharply with timestep $t$:
+            </p>
+
+            <ul>
+              <li><strong>Navigation stage</strong>: Multiple samples carry significant weight. The oracle points toward a <em>mixture</em> of relevant data modes.</li>
+              <li><strong>Refinement stage</strong>: The posterior collapses onto the <em>single nearest</em> sample. The oracle reduces to the standard conditional target $x_1 - x_0$.</li>
+            </ul>
+
+            <!-- Figure 2 -->
+            <div class="figure-container">
+              <img src="static/images/two_stage_evidence.png" alt="MSE and posterior weight">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 2: (a) MSE between oracle and CFM target; (b) Top-1 posterior weight</span>
+                <br><small>Place image at: <code>static/images/fig_oracle_mse_weight.png</code></small>
+              </div> -->
+            </div>
+
+            <p>
+              The transition is sharp: the top-1 posterior weight saturates to nearly 1.0 beyond $t \approx 0.1$ on ImageNet data (our case: latent dimension $D = 8192$, classwise sample size $N\approx 1400$). These two factors govern <em>when</em> this transition occurs:
+            </p>
+
+            <ul>
+              <li><strong>Higher data dimensionality $D$</strong> accelerates the transition.</li>
+              <li><strong>Larger sample size $N$</strong> delays the transition.</li>
+            </ul>
+
+            <!-- Figure 3 -->
+            <div class="figure-container">
+              <img src="static/images/top1_ablation.png" alt="Effect of dimensionality and sample size">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 3: (a) Effect of dimensionality; (b) Effect of sample size</span>
+                <br><small>Place image at: <code>static/images/fig_dim_sample_effect.png</code></small>
+              </div> -->
+            </div>
+          </div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
 
+  <!-- Section 2: Model Behaviors -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Model Behaviors under the Two-Stage Target</h2>
+          <div class="content has-text-justified">
+            <p>The two-stage target leads to distinct behaviors in trained models.</p>
 
-<!--BibTex citation -->
+            <h4>Navigation forms layouts; refinement polishes details.</h4>
+            <p>
+              Visualizing intermediate single-step predictions of a LightningDiT-XL model, we observe that early timesteps produce coarse, class-mean-like outputs that progressively resolve into coherent layouts by $t \approx 0.2$. Beyond this point, the model focuses exclusively on sharpening local textures and fine details with minimal structural change.
+            </p>
+
+            <!-- Figure 4 -->
+            <div class="figure-container">
+               <img src="static/images/model_pred.png" alt="Intermediate predictions across timesteps">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 4: Intermediate predictions across timesteps</span>
+                <br><small>Place image at: <code>static/images/fig_intermediate_predictions.png</code></small>
+              </div> -->
+            </div>
+
+            <h4>Generalization stems from navigation; memorization stems from refinement.</h4>
+            <p>
+              Using a mixed sampling scheme (i.e., oracle velocity up to $t_{\text{switch}}$, then model predictions) we find that early switching ($t_{\text{switch}} &lt; 0.2$) yields diverse, novel images, while late switching ($t_{\text{switch}} &gt; 0.2$) reproduces training samples nearly exactly. The navigation stage is inherently hard to memorize because strong prior corruption prevents the model from recovering any specific training trajectory.
+            </p>
+
+            <!-- Figure 5 -->
+            <div class="figure-container">
+              <img src="static/images/mix_gen.png" alt="Mixed sampling with varying t_switch">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 5: Mixed sampling with varying t_switch</span>
+                <br><small>Place image at: <code>static/images/fig_mixed_sampling.png</code></small>
+              </div> -->
+            </div>
+
+            <h4>Refinement generalizes to unseen data.</h4>
+            <p>
+              When we resume sampling from validation image latents at $t_{\text{resume}} \geq 0.2$, the model preserves the original global layout while improvising plausible fine details, confirming that the refinement capability transfers beyond the training set.
+            </p>
+
+            <!-- Figure 6 -->
+            <div class="figure-container">
+              <img src="static/images/denoise_unseen.png" alt="Refinement on validation latents" width="60%">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 6: Refinement on validation latents</span>
+                <br><small>Place image at: <code>static/images/fig_refinement_validation.png</code></small>
+              </div> -->
+            </div>
+
+            <h4>Model capacity matters asymmetrically.</h4>
+            <p>
+              All model sizes (Small, Base, XL) achieve nearly identical oracle loss in the navigation stage. The gap only emerges in refinement, where larger models and longer training yield clear gains. Navigation is a bottleneck that scaling alone does not resolve.
+            </p>
+
+            <!-- Figure 7 -->
+            <div class="figure-container">
+              <img src="static/images/loss_plot.png" alt="Oracle loss vs. model size">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 7: Oracle loss vs. model size</span>
+                <br><small>Place image at: <code>static/images/fig_oracle_loss_model_size.png</code></small>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 3: Practical Insights -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Practical Insights</h2>
+          <div class="content has-text-justified">
+            <p>Our two-stage perspective explains why several empirical techniques work and how to apply them more effectively.</p>
+
+            <h4>Timestep shifting: give navigation more steps.</h4>
+            <p>
+              Under a fixed sampling budget, allocating modestly more steps to the navigation stage (shift factor $s &lt; 1$) consistently improves generation quality. The sweet spot lies around $s = 0.5$ (for a LightningDiT-B/1 model trained on ImageNet), achieving the best gFID; over-shifting in either direction degrades quality. This effect is even more pronounced in higher-resolution models like Flux.1, where the navigation interval is more compressed.
+            </p>
+
+            <!-- Figure 14 -->
+            <div class="figure-container">
+              <img src="static/images/supp_timestep_shift.png" alt="Flux.1 generations under varying shifts">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 14: Flux.1 generations under varying shifts</span>
+                <br><small>Place image at: <code>static/images/fig_flux_shifts.png</code></small>
+              </div> -->
+            </div>
+
+            <!-- Figure 12 -->
+            <div class="figure-container">
+              <img src="static/images/timestep_shift.png" alt="Timestep shift illustration" width="50%">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 12: Timestep shift illustration</span>
+                <br><small>Place image at: <code>static/images/fig_timestep_shift.png</code></small>
+              </div> -->
+            </div>
+
+            <h4>CFG interval: target early-to-mid refinement.</h4>
+            <p>
+              Applying classifier-free guidance only on a selected sub-interval outperforms full-range CFG. The optimal window concentrates in the early-to-mid refinement stage. Crucially, applying CFG during the earliest navigation steps may <em>hurt</em> generation quality, as the amplified guidance under extreme noise can destabilize global layout formation.
+            </p>
+
+            <h4>Latent space: semantic structure helps both stages.</h4>
+            <p>
+              Comparing VA-VAE (DINO-aligned) and SD-VAE (reconstruction-only), the semantically structured latent space produces smoother oracle loss convergence and faster gFID improvement. A well-organized latent manifold facilitates clearer mode organization, benefiting both navigation and refinement.
+            </p>
+
+            <!-- Figure 8 -->
+            <div class="figure-container">
+              <img src="static/images/latent_loss.png" alt="Oracle loss dynamics under VA-VAE vs. SD-VAE">
+              <!-- <div class="figure-placeholder">
+                <span>Figure 8: Oracle loss dynamics under VA-VAE vs. SD-VAE</span>
+                <br><small>Place image at: <code>static/images/fig_vae_comparison.png</code></small>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BibTeX -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
@@ -480,41 +419,37 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{liu2025navigation,
+  title={From Navigation to Refinement: Revealing the Two-Stage Nature of Flow-based Diffusion Models through Oracle Velocity},
+  author={Liu, Haoming and Liu, Jinnuo and Li, Yanhao and Bai, Liuyang and Ji, Yunkai and Guo, Yuanhe and Wan, Shenji and Wen, Hongyi},
+  journal={arXiv preprint arXiv:2512.02826},
+  year={2025}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+  </main>
 
 <!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+<!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
