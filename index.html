@@ -60,8 +60,8 @@
   <title>From Navigation to Refinement</title>
 
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" href="static/images/logo.png">
+  <link rel="apple-touch-icon" href="static/images/logo.png">
 
   <!-- Critical CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -176,25 +176,26 @@
   </section>
 
   <!-- Hero Figure -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="figure-container">
-          <img src="static/images/teaser_v2.jpg" alt="Two-stage illustration" width="55%">
-          <!-- <div class="figure-placeholder">
-            <span>Figure 1: Two-stage illustration (hero figure)</span>
-            <br><small>Place image at: <code>static/images/fig_hero.png</code></small>
-          </div> -->
-          <p>
-              <br><strong>TL;DR:</strong> We derive the closed-form oracle velocity for flow matching and reveal that its training target is inherently two-stage: a multi-sample guided <strong>navigation</strong> regime near the prior and a single-sample dominated <strong>refinement</strong> regime near the data.
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-centered">Overview</h2>
+          <div class="figure-container">
+            <img src="static/images/teaser_v2.jpg" alt="Two-stage illustration" width="60%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <strong>TL;DR:</strong> We derive the <u>closed-form oracle</u> for flow matching and reveal its <u>two-stage training target</u>: an early <u>navigation</u> stage guided by multiple samples and a later <u>refinement</u> stage dominated by the nearest sample. This leads to distinct <u>memorization/generalization</u> behaviors and explains empirical techniques (e.g., timestep shift, CFG interval).
             </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Tagline / Abstract -->
-  <section class="section hero is-light">
+  <!-- Tagline / Abstract
+  <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -206,7 +207,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Section 1: Closed-Form Oracle Velocity -->
   <section class="section">
@@ -216,7 +217,7 @@
           <h2 class="title is-3 has-text-centered">Closed-Form Oracle Velocity &amp; <br>the Two-Stage Training Target</h2>
           <div class="content has-text-justified">
             <p>
-              Flow matching (FM) learns a velocity field $v_t(x_t;\theta)$ that continuously transports a simple prior distribution $p_{\text{prior}}$ to a target data distribution $p_{\text{data}}$ over $t\in[0,1]$. Since the marginal velocity field is generally intractable, conditional flow matching (CFM) instead regresses on a per-sample conditional target $u_t(x_t\mid x_1)$, which has been shown to share identical gradients with FM. The probability path is constructed via linear interpolation:
+              Flow matching (FM) learns a velocity field $v_t(x_t;\theta)$ that transports a simple prior distribution $p_{\text{prior}}$ to a target data distribution $p_{\text{data}}$ over $t\in[0,1]$. Since the marginal velocity field is generally intractable, conditional flow matching (CFM) instead regresses on a per-sample conditional target $u_t(x_t\mid x_1)$, which has been shown to share identical gradients with FM. The probability path is constructed via linear interpolation:
             </p>
 
             <div class="math-block">
@@ -224,7 +225,7 @@
             </div>
 
             <p>
-              For rectified flow, we set $(\alpha_t, \sigma_t) = (t, 1{-}t)$ and adopt $u_t(x_t\mid x_1) = x_1 - x_0$ as the training target. We show that, under a Gaussian prior and a finite training set $\{x_1^{(i)}\}_{i=1}^N$, the oracle velocity field admits a <strong>closed-form expression</strong>:
+              where $x_0 \sim p_{\text{prior}}$ and $x_1 \sim p_{\text{data}}$. For rectified flow, we set $(\alpha_t, \sigma_t) = (t, 1{-}t)$ and adopt $u_t(x_t\mid x_1) = x_1 - x_0$ as the training target. We show that, under a Gaussian prior and a finite training set $\{x_1^{(i)}\}_{i=1}^N$, the oracle velocity field admits a <strong>closed-form expression</strong>:
             </p>
 
             <div class="math-block">
@@ -363,7 +364,7 @@
 
             <h4>Timestep shifting: give navigation more steps.</h4>
             <p>
-              Under a fixed sampling budget, allocating modestly more steps to the navigation stage (shift factor $s &lt; 1$) consistently improves generation quality. The sweet spot lies around $s = 0.5$ (for a LightningDiT-B/1 model trained on ImageNet), achieving the best gFID; over-shifting in either direction degrades quality. This effect is even more pronounced in higher-resolution models like Flux.1, where the navigation interval is more compressed.
+              Timestep shifting reallocates a fixed sampling budget across the trajectory by remapping a uniform timestep $t_n$ through a smooth monotonic function: $t_m = \frac{s \, t_n}{1 + (s - 1)\,t_n}$, where $s$ is the shift factor. Under a fixed sampling budget, allocating modestly more steps to the navigation stage ($s &lt; 1$) consistently improves generation quality. The sweet spot lies around $s = 0.5$ (for a LightningDiT-B/1 model trained on ImageNet), achieving the best gFID; over-shifting in either direction degrades quality. This effect is even more pronounced in higher-resolution models like Flux.1, where the navigation interval is more compressed.
             </p>
 
             <!-- Figure 14 -->
@@ -386,7 +387,7 @@
 
             <h4>CFG interval: target early-to-mid refinement.</h4>
             <p>
-              Applying classifier-free guidance only on a selected sub-interval outperforms full-range CFG. The optimal window concentrates in the early-to-mid refinement stage. Crucially, applying CFG during the earliest navigation steps may <em>hurt</em> generation quality, as the amplified guidance under extreme noise can destabilize global layout formation.
+              Applying classifier-free guidance only on a selected sub-interval outperforms full-range CFG. The optimal window concentrates in the early-to-mid refinement stage. Crucially, applying CFG during the earliest navigation steps can <em>hurt</em> generation quality, as the amplified guidance under extreme noise may destabilize global layout formation.
             </p>
 
             <h4>Latent space: semantic structure helps both stages.</h4>
